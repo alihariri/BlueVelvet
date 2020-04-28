@@ -16,8 +16,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   </head>
     <body>
-        
+        <div class="container">
         <form action="/action_page.php">
+          <div class="recipe-name-container container-md">
   <div class="form-group" style="margin-top: 10px;">
     <label for="recipe-name">Recipe name:</label>
     <input type="text" class="form-control" placeholder=" " id="recipe-name">
@@ -27,18 +28,20 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroupFileAddon01">Cover image</span>
   </div>
+</div>
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="inputGroupFile01"
       aria-describedby="inputGroupFileAddon01">
     <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
   </div>
 </div>
-            
+    <div class="ingredients-container container-md">      
     <div class="form-group">
   <label for="ingredient">Ingredients:</label>
   <textarea class="form-control" rows="3" id="ingredient" placeholder="1 tsp sugar, 1 cup water..."></textarea>
-</div>
-            
+    </div>
+</div> 
+      <div class="first-step-container container-md">     
     <div class="form-group">
   <label for="step1">Step1:</label>
   <textarea class="form-control" rows="3" id="ingredient" placeholder="Peel potatoes. Bring water to boil."></textarea>
@@ -47,15 +50,17 @@
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroupFileAddon01">Upload image</span>
   </div>
+</div> 
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="inputGroupFile01"
       aria-describedby="inputGroupFileAddon01">
     <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
   </div>
 </div>            
-            
-            <p>+ Add step</p>
-            
+            <di class="btn btn-primary add-step-btn">
+            <p class="add-step-p">+ Add step</p>
+          </di>
+           <div class="mood-container container-md"> 
 <h4>Best for when you're...</h4>
 <div class="form-check">
   <label class="form-check-label">
@@ -72,12 +77,13 @@
     <input type="checkbox" class="form-check-input" value="" >Happy
   </label>
 </div>
+</div>
 
-
-
-  <button type="submit" class="btn btn-primary">Add recipe!</button>
+<div class="add-recipe-container container-md	">
+  <button type="submit" class="btn btn-primary add-recipe">Add recipe!</button>
 </form>
-        
+</div>
+
     <nav class="bottom nav fixed-bottom navbar-expand-sm justify-content-center">
   <ul class="nav">
     <li class="nav-item">
@@ -91,7 +97,7 @@
     </li>
   </ul>
 </nav>
-
+</div>
 
     </body>
 </html>
